@@ -6,11 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		2017BBB22EBAAE32003658DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2087F1622EB2DAA00005FFB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2087F16A2EB2DAA00005FFB7;
+			remoteInfo = CoreFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2017BB9D2EBAAE14003658DB /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2087F16B2EB2DAA00005FFB7 /* CoreFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2017BBB02EBAAE15003658DB /* Exceptions for "Example" folder in "Example" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2017BB9C2EBAAE14003658DB /* Example */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		2017BB9E2EBAAE14003658DB /* Example */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2017BBB02EBAAE15003658DB /* Exceptions for "Example" folder in "Example" target */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		2087F16D2EB2DAA00005FFB7 /* CoreFramework */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CoreFramework;
@@ -19,6 +48,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2017BB9A2EBAAE14003658DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2087F1682EB2DAA00005FFB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				2087F16D2EB2DAA00005FFB7 /* CoreFramework */,
+				2017BB9E2EBAAE14003658DB /* Example */,
 				2087F16C2EB2DAA00005FFB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2087F16B2EB2DAA00005FFB7 /* CoreFramework.framework */,
+				2017BB9D2EBAAE14003658DB /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +96,29 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2017BB9C2EBAAE14003658DB /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2017BBB12EBAAE15003658DB /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				2017BB992EBAAE14003658DB /* Sources */,
+				2017BB9A2EBAAE14003658DB /* Frameworks */,
+				2017BB9B2EBAAE14003658DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2017BBB32EBAAE32003658DB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2017BB9E2EBAAE14003658DB /* Example */,
+			);
+			name = Example;
+			packageProductDependencies = (
+			);
+			productName = Example;
+			productReference = 2017BB9D2EBAAE14003658DB /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		2087F16A2EB2DAA00005FFB7 /* CoreFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2087F1742EB2DAA00005FFB7 /* Build configuration list for PBXNativeTarget "CoreFramework" */;
@@ -91,6 +152,9 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					2017BB9C2EBAAE14003658DB = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
 					2087F16A2EB2DAA00005FFB7 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
@@ -111,11 +175,19 @@
 			projectRoot = "";
 			targets = (
 				2087F16A2EB2DAA00005FFB7 /* CoreFramework */,
+				2017BB9C2EBAAE14003658DB /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2017BB9B2EBAAE14003658DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2087F1692EB2DAA00005FFB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +198,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2017BB992EBAAE14003658DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2087F1672EB2DAA00005FFB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,7 +214,77 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2017BBB32EBAAE32003658DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2087F16A2EB2DAA00005FFB7 /* CoreFramework */;
+			targetProxy = 2017BBB22EBAAE32003658DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2017BBAE2EBAAE15003658DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82TVN2X2TP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = MenuViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = daanmoura.dev.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2017BBAF2EBAAE15003658DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82TVN2X2TP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = MenuViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = daanmoura.dev.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		2087F1722EB2DAA00005FFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +487,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2017BBB12EBAAE15003658DB /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2017BBAE2EBAAE15003658DB /* Debug */,
+				2017BBAF2EBAAE15003658DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2087F1652EB2DAA00005FFB7 /* Build configuration list for PBXProject "CoreFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
