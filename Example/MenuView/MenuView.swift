@@ -22,24 +22,23 @@ class MenuView: UIView {
   }()
   
   private let onboardingButton: UIButton = {
-    let button = UIButton(type: .system)
-    button.configuration = .prominentGlass()
+    let button = Button(type: .system)
     button.setTitle("Onboarding", for: .normal)
-    button.layer.cornerRadius = Metrics.medium
-    button.tintColor = Colors.gray100
     button.addTarget(self, action: #selector(didTapOnboardingButton), for: .touchUpInside)
-    button.translatesAutoresizingMaskIntoConstraints = false
     return button
   }()
   
   private let testCheckboxButton: UIButton = {
-    let button = UIButton(type: .system)
-    button.configuration = .prominentGlass()
+    let button = Button(type: .system)
     button.setTitle("Test checkbox", for: .normal)
-    button.layer.cornerRadius = Metrics.medium
-    button.tintColor = Colors.gray100
     button.addTarget(self, action: #selector(didTapCheckboxButton), for: .touchUpInside)
-    button.translatesAutoresizingMaskIntoConstraints = false
+    return button
+  }()
+  
+  private let testButtons: UIButton = {
+    let button = Button(type: .system)
+    button.setTitle("Test buttons", for: .normal)
+    button.addTarget(self, action: #selector(didTapTestButtonsButton), for: .touchUpInside)
     return button
   }()
 
@@ -56,6 +55,7 @@ class MenuView: UIView {
     addSubview(titleLabel)
     addSubview(onboardingButton)
     addSubview(testCheckboxButton)
+    addSubview(testButtons)
     setupConstraints()
   }
   
@@ -70,7 +70,11 @@ class MenuView: UIView {
       
       testCheckboxButton.topAnchor.constraint(equalTo: onboardingButton.bottomAnchor, constant: Metrics.small),
       testCheckboxButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-      testCheckboxButton.heightAnchor.constraint(equalToConstant: Metrics.buttonHeight)
+      testCheckboxButton.heightAnchor.constraint(equalToConstant: Metrics.buttonHeight),
+      
+      testButtons.topAnchor.constraint(equalTo: testCheckboxButton.bottomAnchor, constant: Metrics.small),
+      testButtons.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+      testButtons.heightAnchor.constraint(equalToConstant: Metrics.buttonHeight)
     ])
   }
   
@@ -84,6 +88,14 @@ class MenuView: UIView {
     let checkboxViewController = CheckboxViewController()
     if let parentViewController = self.window?.rootViewController {
       parentViewController.present(checkboxViewController, animated: true)
+    }
+  }
+  
+  @objc
+  private func didTapTestButtonsButton() {
+    let testButtonsViewController = ButtonViewController()
+    if let parentViewController = self.window?.rootViewController {
+      parentViewController.present(testButtonsViewController, animated: true)
     }
   }
 }
